@@ -3,48 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>My LIFF app</title>
+  <title>ลงชื่อเข้าเรียนปฏิบัติการ</title>
   <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Itim&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <button onclick="openWindow()">ตกลง</button>
-
-  <!-- <p><a href="liff/path/?param=9">Link to Path</a></p>
-
-  <button id="btnMsg" onclick="sendMsg()">Send Message</button>
-  <button id="btnShare" onclick="shareMsg()">Share Target Picker</button>
-  <button onclick="openWindow()">Open Window</button>
-  <button id="btnScanCode" onclick="scanCode()">Scan Code</button>
-  <button id="btnLogOut" onclick="logOut()">Log Out</button>
-  <button id="btnClose" onclick="closed()">Close</button> -->
-
-  <!-- <script src="js/vconsole.min.js"></script> -->
-  <!-- <script>
-    var vConsole = new VConsole()
-    console.log("Hello World!")
-  </script> -->
-
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> 
-  <script>
-    
-    
-    function openWindow() {
-      liff.openWindow ({
-        url: "https://apps.powerapps.com/play/e/default-cf81f1df-de59-4c29-91da-a2dfd04aa751/a/26e4ae3a-19d6-49a6-8e5a-96d2224352d4?tenantId=cf81f1df-de59-4c29-91da-a2dfd04aa751#",
-        external: true
-      })
+  <style>
+    body {background-color: lightblue;
+    }   
+    .heading {
+      font-size: 15px;
+      text-align: center;
+      text-shadow: 2px 2px gray;
+      display: block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    
-    function main() {
-       liff.init({ liffId: "1661054856-nPEmwyoR" })
-      // getEnvironment()
-      // getUserProfile()
-      // getContext()
-      // getFriendship()
-      // createUniversalLink()
+    .text {
+      font-size: 20px;
+      line-height: 1.8;
+      display: block;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    main()
+    .button{
+      text-align: center;
+      margin-top: 30px;
+      align-items:center;          
+    }
+  </style>
+
+  <div class="heading">
+    <h1>คำชี้แจงการลงชื่อเข้าเรียนปฏิบัติการ 463556</h1>
+  </div>
+  <div class='text'>
+    <ul>
+      <li><span>นักศึกษาต้องลงชื่อเข้าเรียนในช่วงเวลา</span>
+          <span style="color:green;">13:00 ถึง 16:00 น.</span>
+          <span>ของวันที่เรียนปฏิบัติการ หรือตามช่วงเวลาที่อาจารย์ผู้ควบคุมปฏิบัติการเป็นผู้กำหนด</span></li>
+          <p></p>
+      <li>นักศึกษาต้องเปิดใช้งานตำแหน่งที่ตั้ง (location) ในอุปกรณ์ที่ใช้ลงชื่อเข้าเรียน</li><p></p>
+      <li>ข้อมูลของนักศึกษาและตำแหน่งที่ตั้งจะเป็นความลับและใช้ในการยืนยันการเข้าเรียนเท่านั้น</li>
+      </ul>
+  </div>
+  <div class="button">
+  <button onclick="openWindow()" >ตกลง</button>
+  </div>
+
+
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> 
+<script>
+  
+  
+  function openWindow() {
+    liff.openWindow ({
+      url: "https://apps.powerapps.com/play/e/default-cf81f1df-de59-4c29-91da-a2dfd04aa751/a/26e4ae3a-19d6-49a6-8e5a-96d2224352d4?tenantId=cf81f1df-de59-4c29-91da-a2dfd04aa751#",
+      external: true
+    })
+  }
+
+  
+  function main() {
+     liff.init({ liffId: "1661054856-nPEmwyoR" })
+    
+  }
+  main()
   </script>
 </body>
 </html>
