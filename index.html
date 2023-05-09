@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF app</title>
+  <link rel="stylesheet" href="css/style.css" media="all">
+</head>
+<body>
+  <button onclick="openWindow()">ตกลง</button>
+
+  <!-- <p><a href="liff/path/?param=9">Link to Path</a></p>
+
+  <button id="btnMsg" onclick="sendMsg()">Send Message</button>
+  <button id="btnShare" onclick="shareMsg()">Share Target Picker</button>
+  <button onclick="openWindow()">Open Window</button>
+  <button id="btnScanCode" onclick="scanCode()">Scan Code</button>
+  <button id="btnLogOut" onclick="logOut()">Log Out</button>
+  <button id="btnClose" onclick="closed()">Close</button> -->
+
+  <!-- <script src="js/vconsole.min.js"></script> -->
+  <!-- <script>
+    var vConsole = new VConsole()
+    console.log("Hello World!")
+  </script> -->
+
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> 
+  <script>
+    
+    
+    function openWindow() {
+      liff.openWindow ({
+        url: "https://apps.powerapps.com/play/e/default-cf81f1df-de59-4c29-91da-a2dfd04aa751/a/26e4ae3a-19d6-49a6-8e5a-96d2224352d4?tenantId=cf81f1df-de59-4c29-91da-a2dfd04aa751#",
+        external: true
+      })
+    }
+
+    
+    function main() {
+       liff.init({ liffId: "1661054856-nPEmwyoR" })
+      // getEnvironment()
+      // getUserProfile()
+      // getContext()
+      // getFriendship()
+      // createUniversalLink()
+    }
+    main()
+  </script>
+</body>
+</html>
