@@ -12,9 +12,10 @@
 
 <body>
   <style>
-    body {background-color: lightblue;
+    body {background-color: #ECF8F8;
     }   
     .heading {
+      color:#622A1F;
       font-size: 15px;
       text-align: center;
       text-shadow: 2px 2px gray;
@@ -24,18 +25,21 @@
       margin-right: auto;
     }
     .text {
+      color:#53504A;
       font-size: 20px;
       line-height: 1.8;
       display: block;
-      margin-top: 50px;
+      margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
     }
     .button{
-      text-align: center;
+      text-align: right;
       margin-top: 30px;
-      align-items:center;          
+      align-items: right; 
+                   
     }
+
   </style>
 
   <div class="heading">
@@ -44,16 +48,18 @@
   <div class='text'>
     <ul>
       <li><span>นักศึกษาต้องลงชื่อเข้าเรียนในช่วงเวลา</span>
-          <span style="color:green;">13:00 ถึง 16:00 น.</span>
+          <span style="color:#BE3455; font-weight:bold">13:00 ถึง 16:00 น.</span>
           <span>ของวันที่เรียนปฏิบัติการ หรือตามช่วงเวลาที่อาจารย์ผู้ควบคุมปฏิบัติการเป็นผู้กำหนด</span></li>
-          <p></p>
-      <li>นักศึกษาต้องเปิดใช้งานตำแหน่งที่ตั้ง (location) ในอุปกรณ์ที่ใช้ลงชื่อเข้าเรียน</li><p></p>
+      <p></p>
+      <li>นักศึกษาต้องเปิดใช้งานตำแหน่งที่ตั้ง (location) ในอุปกรณ์ที่ใช้ลงชื่อเข้าเรียน</li>
+      <p></p>
       <li>ข้อมูลของนักศึกษาและตำแหน่งที่ตั้งจะเป็นความลับและใช้ในการยืนยันการเข้าเรียนเท่านั้น</li>
       </ul>
   </div>
   <div class="button">
   <button onclick="openWindow()" >ตกลง</button>
   </div>
+  
 
 
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> 
